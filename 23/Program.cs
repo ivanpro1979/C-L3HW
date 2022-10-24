@@ -7,8 +7,19 @@ Console.WriteLine("Программа выводит кубы чисел от 1 
 Console.Write("Задайте число: ");
 int a = (Convert.ToInt32(Console.ReadLine()));
 int b = 1;
-while (b < a + 1)
+if (a >= b)
 {
-    Console.WriteLine((Math.Pow(b,3)));
-    b ++;
+    while (b < a + 1)
+   {
+       Console.Write(((Math.Pow(b,3))) + ", ");
+       b ++;
+   }
+}
+else
+{
+    while (b > a -1)
+   {
+       Console.Write(((Math.Pow(b,3))) + ", ");
+       b --;
+   }
 }
